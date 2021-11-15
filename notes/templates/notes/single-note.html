@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1> {{note.title}}</h1>
+<h1> {{note.content}}</h1>
+<h1> {{note.importance}}</h1>
+
+
+<hr>
+{% for note in note.importance.all %}
+<span style="border:1px solid grey">{{importance}}</span>
+{% endfor %}
+<hr>
+
+<br>
+<p>{{project.description}}</p>
+
+{% endblock content %}
